@@ -4,8 +4,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from script.utils import canonicalize_smiles
-
+from utils import canonicalize_smiles
 
 def remove_same_mol(rxn):
     pt = re.compile(r':(\d+)]')
@@ -83,7 +82,7 @@ if __name__ == '__main__':
     
         
     uspto_190_df = pd.read_csv('data/USPTO-multistep-190/uspto_190_route_target_mol.csv')
-    target_products = set(uspto_190_df['smiles'])  # 用 set 加快查找速度
+    target_products = set(uspto_190_df['smiles'])  
 
     # 去除产物在 uspto_190 中的反应
     result_df = result_df[result_df['clean_map_rxn'].apply(

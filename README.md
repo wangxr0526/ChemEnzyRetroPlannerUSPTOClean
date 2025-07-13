@@ -4,6 +4,11 @@
 
 The files in `data/USPTO_remapped` are downloaded from [IBM RXNMapperData](https://ibm.ent.box.com/v/RXNMapperData/folder/112951098080).
 
+## Packages
+- rdchiral
+- pandas 
+- rdkit
+
 ## Pipeline Scripts
 
 This repository provides a pipeline for cleaning, processing, and extracting reaction templates from USPTO reaction data. The main scripts are:

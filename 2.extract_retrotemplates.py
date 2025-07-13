@@ -9,7 +9,7 @@ import multiprocessing
 from rdchiral.template_extractor import extract_from_reaction
 from tqdm import tqdm
 
-from script.utils import timeout, get_writer
+from utils import timeout, get_writer
 
 debug = False
 
